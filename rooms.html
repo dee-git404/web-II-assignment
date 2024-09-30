@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Rooms</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Our Rooms</h2>
+
+    <div class="filter">
+        <label for="price-range">Filter by Price:</label>
+        <input type="range" id="price-range" name="price" min="100" max="1000" step="50">
+        <span id="price-value">500</span> USD/night
+    </div>
+
+    <div class="room-list" id="room-list">
+        <div class="room-item" data-price="300">
+            <h3>Deluxe Room</h3>
+            <p>Price: 300 USD/night</p>
+        </div>
+        <div class="room-item" data-price="500">
+            <h3>Executive Suite</h3>
+            <p>Price: 500 USD/night</p>
+        </div>
+        <div class="room-item" data-price="700">
+            <h3>Presidential Suite</h3>
+            <p>Price: 700 USD/night</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Hotel Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
